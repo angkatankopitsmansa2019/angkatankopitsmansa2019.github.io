@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+	<title>Document</title>
+
+</head>
+<body>
+
+
+
+
+
+<div class="container">
+
+	<div class="title-bar"> <h1>ABSEN XII IPA I</h1> </div>
+
+	<div class="status"></div>
+
+	<div class="blind" hidden>
+		<form class="settings-absen">
+			<h3>Daftar sebagai</h3>
+
+			<label for="nama">Nama :</label>
+			<input type="text" name="nama">
+
+			<label for="nomor">Nomor :</label>
+			<input type="number" name="nomor">
+
+			<div class="alert"></div>
+
+			<button type="submit" class="save" hidden disabled="">Simpan</button>
+			<button type="submit" class="change-button" hidden disabled="">Ubah</button>
+		</form>
+	</div>
+
+	<span class="material-icons change-settings">edit</span>
+
+	<form name="form-absen" class="absen">
+		<input class="device-info" type="hidden" name="device" value="">
+		
+		<div>
+			<label for="nama">Nama :</label>
+			<input class="nama" type="text" name="nama" value="" readonly="readonly">
+		</div>
+
+		<div>
+			<label for="nomor">Nomor :</label>
+			<input class="nomor" type="number" name="nomor" value="" readonly="readonly">
+		</div>
+
+		<button type="submit" class="submit-button">kirim</button>
+	</form>
+
+
+	<footer>
+	</footer>
+</div>
+
+
+
+
+
+<script src="function.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
